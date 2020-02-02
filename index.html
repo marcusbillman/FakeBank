@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
+        <script src="./js/app.js" defer></script>
+        <title>Fake Bank</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <section>
+                <h1>
+                    Fake Bank
+                </h1>
+                <form action="" method="get" id="frm"></form>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Delectus corporis sit facilis saepe magnam voluptas facere
+                    porro tempore nostrum quibusdam blanditiis beatae, iure vero
+                    ut ea excepturi corrupti possimus illo?
+                </p>
+                <div class="toolbar">
+                    <button onclick="resetDefaultAccounts()">
+                        Reset default accounts
+                    </button>
+                </div>
+                <div class="accounts" id="accountsContainer">
+                    <h1>Accounts</h1>
+                    <div class="accounts-list" id="accountsList">
+                        <div class="account-wrapper" id="accountTemplate">
+                            <div class="account">
+                                <div>
+                                    <span class="account__name"></span>
+                                    <span class="account__number"></span>
+                                </div>
+                                <span class="account__balance"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a id="createNewAccount"
+                        ><i class="material-icons">add</i>Create new account</a
+                    >
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
