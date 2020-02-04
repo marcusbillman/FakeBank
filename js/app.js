@@ -13,7 +13,7 @@ const defaultAccounts = [
 
 const accountTemplate = document.getElementById("accountTemplate");
 const accountsList = document.getElementById("accountsList");
-const createNewAccountLink = document.getElementById("createNewAccount");
+const openNewAccountLink = document.getElementById("openNewAccount");
 
 let accounts;
 
@@ -40,7 +40,7 @@ function createAccountElement(account) {
     accountsList.appendChild(newElement);
 }
 
-createNewAccountLink.addEventListener("click", () => {
+openNewAccountLink.addEventListener("click", () => {
     const input = window.prompt("Account name");
     if (input) {
         openNewAccount(input);

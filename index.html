@@ -21,36 +21,51 @@
     <body>
         <div class="container">
             <section>
-                <h1>
-                    Fake Bank
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Delectus corporis sit facilis saepe magnam voluptas facere
-                    porro tempore nostrum quibusdam blanditiis beatae, iure vero
-                    ut ea excepturi corrupti possimus illo?
-                </p>
-                <div class="toolbar">
-                    <button onclick="resetDefaultAccounts()">
-                        Reset default accounts
-                    </button>
+                <div class="row">
+                    <section class="toolbar">
+                        <h2>Debug</h2>
+                        <button onclick="resetDefaultAccounts()">
+                            Reset default accounts
+                        </button>
+                    </section>
                 </div>
-                <div class="accounts" id="accountsContainer">
-                    <h2>Accounts</h2>
-                    <div class="accounts-list" id="accountsList">
-                        <div class="account-wrapper" id="accountTemplate">
-                            <div class="account">
-                                <div>
-                                    <span class="account__name"></span>
-                                    <span class="account__number"></span>
+                <div class="row">
+                    <div class="eight columns">
+                        <section class="accounts" id="accountsContainer">
+                            <h2>Accounts</h2>
+                            <div class="accounts-list" id="accountsList">
+                                <div
+                                    class="account-wrapper"
+                                    id="accountTemplate"
+                                >
+                                    <div class="account">
+                                        <div>
+                                            <span class="account__name"></span>
+                                            <span
+                                                class="account__number"
+                                            ></span>
+                                        </div>
+                                        <span class="account__balance"></span>
+                                    </div>
                                 </div>
-                                <span class="account__balance"></span>
                             </div>
-                        </div>
+                            <a id="openNewAccount"
+                                ><i class="material-icons">add</i>Open new
+                                account</a
+                            >
+                        </section>
+                        <section class="cards">
+                            <h2>Cards</h2>
+                        </section>
                     </div>
-                    <a id="createNewAccount"
-                        ><i class="material-icons">add</i>Create new account</a
-                    >
+                    <section class="four columns">
+                        <section class="recent-activity">
+                            <h2>Recent activity</h2>
+                        </section>
+                        <section class="help">
+                            <h2>Got a question?</h2>
+                        </section>
+                    </section>
                 </div>
             </section>
         </div>

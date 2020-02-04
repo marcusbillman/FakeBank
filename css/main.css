@@ -16,11 +16,8 @@ body {
   font-size: 1.6rem;
 }
 
-.container {
-  width: 100%;
-  max-width: 1000px;
-  padding: 0 10px;
-  margin: 0 auto;
+section {
+  margin-bottom: 4.8rem;
 }
 
 h1 {
@@ -38,17 +35,9 @@ p {
   margin-bottom: 1.6rem;
 }
 
-section {
-  padding: 5rem 0;
-}
-
-section .toolbar {
+.toolbar {
   background: #e8e8e8;
   padding: 2rem 4rem;
-}
-
-.accounts {
-  padding: 2rem 0;
 }
 
 .accounts #accountTemplate {
@@ -56,8 +45,8 @@ section .toolbar {
 }
 
 .accounts .account-wrapper {
-  -webkit-filter: drop-shadow(0px 10px 10px rgba(66, 42, 42, 0.1));
-          filter: drop-shadow(0px 10px 10px rgba(66, 42, 42, 0.1));
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(66, 42, 42, 0.12));
+          filter: drop-shadow(0px 4px 6px rgba(66, 42, 42, 0.12));
 }
 
 .accounts .account {
