@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 
-$clr-primary: #16bdff;
-$clr-secondary: #6f16ff;
-$clr-grey-light: #f8f8f8;
-$clr-grey-mid: #ececec;
+$clr-blue: #004eeb;
+$clr-blue-light: #d8e5ff;
+$clr-green: #00b91f;
+$clr-red: #d60000;
+$clr-grey-light: #e8e8e8;
+$clr-grey-mid: #9f9f9f;
+$clr-grey-dark: #3b3b3b;
 
 html {
     font-size: 62.5%;
@@ -45,7 +48,7 @@ p {
 section {
     padding: 5rem 0;
     .toolbar {
-        background: $clr-grey-mid;
+        background: $clr-grey-light;
         padding: 2rem 4rem;
     }
 }
@@ -83,7 +86,7 @@ section {
 a {
     display: inline-flex;
     align-items: center;
-    color: $clr-primary;
+    color: $clr-blue;
     cursor: pointer;
     .material-icons {
         margin-right: 1rem;
@@ -93,7 +96,7 @@ a {
 button {
     display: inline-block;
     border-radius: 4px;
-    background: $clr-primary;
+    background: $clr-blue;
     font-size: 1.6rem;
     font-weight: bold;
     color: white;

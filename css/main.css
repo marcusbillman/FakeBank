@@ -43,7 +43,7 @@ section {
 }
 
 section .toolbar {
-  background: #ececec;
+  background: #e8e8e8;
   padding: 2rem 4rem;
 }
 
@@ -98,7 +98,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #16bdff;
+  color: #004eeb;
   cursor: pointer;
 }
 
@@ -109,7 +109,7 @@ a .material-icons {
 button {
   display: inline-block;
   border-radius: 4px;
-  background: #16bdff;
+  background: #004eeb;
   font-size: 1.6rem;
   font-weight: bold;
   color: white;
