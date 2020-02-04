@@ -21,33 +21,33 @@ let accounts;
 if (localStorage.getItem("accounts")) {
     accounts = JSON.parse(localStorage.getItem("accounts"));
     console.log(accounts);
-    populateAccountsView();
+    accounts.forEach(account => {
+        createAccountElement(account);
+    });
 } else {
     console.error("No accounts in local storage");
 }
 
-function populateAccountsView() {
-    accounts.forEach(element => {
-        const newAccount = accountTemplate.cloneNode(true);
-        newAccount.id = "";
-        newAccount.querySelector(".account__name").innerText = element.name;
-        newAccount.querySelector(".account__number").innerText = element.number;
-        newAccount.querySelector(".account__balance").innerText =
-            "$" + element.balance;
-        newAccount.querySelector(".account").style.animationDelay =
-            accounts.indexOf(element) * 0.1 + "s";
-        accountsList.appendChild(newAccount);
-    });
+function createAccountElement(account) {
+    const newElement = accountTemplate.cloneNode(true);
+    newElement.id = "";
+    newElement.querySelector(".account__name").innerText = account.name;
+    newElement.querySelector(".account__number").innerText = account.number;
+    newElement.querySelector(".account__balance").innerText =
+        "$" + account.balance;
+    newElement.querySelector(".account").style.animationDelay =
+        accounts.indexOf(account) * 0.1 + "s";
+    accountsList.appendChild(newElement);
 }
 
 createNewAccountLink.addEventListener("click", () => {
     const input = window.prompt("Account name");
     if (input) {
-        createNewAccount(input);
+        openNewAccount(input);
     }
 });
 
-function createNewAccount(name) {
+function openNewAccount(name) {
     const number =
         getRandomInt(100, 999) +
         " " +
@@ -60,16 +60,7 @@ function createNewAccount(name) {
         balance: 0.0
     });
     localStorage.setItem("accounts", JSON.stringify(accounts));
-    //location.reload();
-    const newAccount = accountTemplate.cloneNode(true);
-    let element = accounts[accounts.length - 1];
-    newAccount.id = "";
-    newAccount.querySelector(".account__name").innerText = element.name;
-    newAccount.querySelector(".account__number").innerText = element.number;
-    newAccount.querySelector(".account__balance").innerText =
-        "$" + element.balance;
-    accountsList.appendChild(newAccount);
-    accountsList.insertBefore(newAccount, createNewAccountLink);
+    createAccountElement(accounts[accounts.length - 1]);
 }
 
 function resetDefaultAccounts() {
