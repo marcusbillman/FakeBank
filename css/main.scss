@@ -13,6 +13,8 @@ $clr-grey-light: #e8e8e8;
 $clr-grey-mid: #9f9f9f;
 $clr-grey-dark: #3b3b3b;
 
+$card-shadow: 0px 4px 6px rgba(66, 42, 42, 0.12);
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -21,6 +23,44 @@ html {
 body {
     font-family: "Lato", sans-serif;
     font-size: 1.6rem;
+}
+
+nav {
+    margin-top: 3.2rem;
+    margin-bottom: 4.8rem;
+    .nav__left {
+        display: flex;
+        align-items: center;
+    }
+    .nav__logo {
+        font-weight: bold;
+    }
+    .nav__link {
+        color: $clr-grey-dark;
+        &:not(:last-child) {
+            margin-right: 3.2rem;
+        }
+        &--active {
+            font-weight: bold;
+            color: $clr-blue;
+        }
+    }
+    .active-line {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -2.1rem;
+            height: 2px;
+            background: $clr-blue;
+        }
+    }
+}
+
+main {
+    padding-top: 4.8rem;
 }
 
 section {
@@ -42,9 +82,49 @@ p {
     margin-bottom: 1.6rem;
 }
 
-.toolbar {
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.separator--vertical {
+    height: 2rem;
+    width: 2px;
+    margin: 0 3.2rem;
     background: $clr-grey-light;
+}
+
+.wallpaper {
+    background: url(../img/blue-clouds.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 200px;
+    color: white;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    &__heading {
+        margin-bottom: 0.8rem;
+    }
+    &__body {
+        font-size: 2rem;
+    }
+}
+
+.card {
+    font-size: 1.6rem;
+    background: white;
+    border-radius: 8px;
     padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $card-shadow;
 }
 
 .accounts {
@@ -52,16 +132,9 @@ p {
         display: none;
     }
     .account-wrapper {
-        filter: drop-shadow(0px 4px 6px rgba(66, 42, 42, 0.12));
+        filter: drop-shadow($card-shadow);
     }
     .account {
-        font-size: 1.6rem;
-        background: white;
-        border-radius: 8px;
-        padding: 2rem 4rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-bottom: 2rem;
         animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         transform: translateY(-100%);

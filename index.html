@@ -19,16 +19,56 @@
     </head>
 
     <body>
-        <div class="container">
-            <section>
-                <div class="row">
-                    <section class="toolbar">
-                        <h2>Debug</h2>
-                        <button onclick="resetDefaultAccounts()">
-                            Reset default accounts
-                        </button>
-                    </section>
-                </div>
+        <header>
+            <div class="container">
+                <nav class="card">
+                    <div class="nav__left">
+                        <span class="nav__logo">Bank</span>
+                        <div class="separator--vertical"></div>
+                        <a
+                            href="#"
+                            class="nav__link nav__link--active active-line icon-link"
+                        >
+                            <i class="material-icons">dashboard</i>
+                            Overview
+                        </a>
+                        <a href="#" class="nav__link icon-link">
+                            <i class="material-icons">send</i>
+                            Transfer
+                        </a>
+                        <a href="#" class="nav__link icon-link">
+                            <i class="material-icons">account_balance_wallet</i>
+                            Economy
+                        </a>
+                        <a href="#" class="nav__link icon-link">
+                            <i class="material-icons">contact_support</i>
+                            Help & support
+                        </a>
+                    </div>
+                    <div class="nav__right">
+                        <a
+                            href="#"
+                            class="nav__link nav__link--active icon-link"
+                        >
+                            <i class="material-icons">person</i>
+                            Elliot Duchek
+                        </a>
+                        <a href="#" class="nav__link icon-link">
+                            <i class="material-icons">exit_to_app</i>
+                            Sign out
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="wallpaper">
+            <div class="container">
+                <h1 class="wallpaper__heading">Good morning, Elliot!</h1>
+                <span class="wallpaper__body">3 February, 2020</span>
+            </div>
+        </div>
+        <main>
+            <div class="container">
                 <div class="row">
                     <div class="eight columns">
                         <section class="accounts" id="accountsContainer">
@@ -38,7 +78,7 @@
                                     class="account-wrapper"
                                     id="accountTemplate"
                                 >
-                                    <div class="account">
+                                    <div class="account card">
                                         <div>
                                             <span class="account__name"></span>
                                             <span
@@ -57,6 +97,12 @@
                         <section class="cards">
                             <h2>Cards</h2>
                         </section>
+                        <section class="debug">
+                            <h2>Debug</h2>
+                            <button onclick="resetDefaultAccounts()">
+                                Reset default accounts
+                            </button>
+                        </section>
                     </div>
                     <section class="four columns">
                         <section class="recent-activity">
@@ -67,7 +113,7 @@
                         </section>
                     </section>
                 </div>
-            </section>
-        </div>
+            </div>
+        </main>
     </body>
 </html>
