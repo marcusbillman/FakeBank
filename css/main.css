@@ -84,6 +84,14 @@ p {
   margin-bottom: 1.6rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.grey-mid {
+  color: #9f9f9f;
+}
+
 .icon-link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -92,6 +100,18 @@ p {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+}
+
+.icon-action {
+  text-decoration: none;
+}
+
+.icon-action .material-icons {
+  margin-right: 0;
+}
+
+.icon-action:not(:last-child) {
+  margin-right: 2.4rem;
 }
 
 .separator--vertical {
@@ -146,8 +166,29 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card--shadow {
   -webkit-box-shadow: 0px 4px 6px rgba(66, 42, 42, 0.12);
           box-shadow: 0px 4px 6px rgba(66, 42, 42, 0.12);
+}
+
+.card--border {
+  border: 2px solid #e8e8e8;
+  margin-bottom: 1.6rem;
+}
+
+.card span {
+  display: block;
+}
+
+.card__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .accounts #accountTemplate {
@@ -160,7 +201,7 @@ p {
 }
 
 .accounts .account {
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
   -webkit-animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
           animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
   -webkit-transform: translateY(-100%);
@@ -169,12 +210,8 @@ p {
           clip-path: inset(100% 0 0 0);
 }
 
-.accounts .account span {
-  display: block;
-}
-
-.accounts .account__name {
-  font-weight: bold;
+.accounts .account__balance {
+  margin-right: 4.8rem;
 }
 
 a {

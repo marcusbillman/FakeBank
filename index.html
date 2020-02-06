@@ -21,7 +21,7 @@
     <body>
         <header>
             <div class="container">
-                <nav class="card">
+                <nav class="card card--shadow">
                     <div class="nav__left">
                         <span class="nav__logo">Bank</span>
                         <div class="separator--vertical"></div>
@@ -80,16 +80,32 @@
                                 >
                                     <div class="account card">
                                         <div>
-                                            <span class="account__name"></span>
                                             <span
-                                                class="account__number"
+                                                class="account__name bold"
+                                            ></span>
+                                            <span
+                                                class="account__number grey-mid"
                                             ></span>
                                         </div>
-                                        <span class="account__balance"></span>
+                                        <div class="card__right">
+                                            <span
+                                                class="account__balance bold"
+                                            ></span>
+                                            <a href="#" class="icon-action"
+                                                ><i class="material-icons"
+                                                    >send</i
+                                                ></a
+                                            >
+                                            <a href="#" class="icon-action"
+                                                ><i class="material-icons"
+                                                    >more_vert</i
+                                                ></a
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <a id="openNewAccount"
+                            <a id="openNewAccount" class="icon-link bold"
                                 ><i class="material-icons">add</i>Open new
                                 account</a
                             >
@@ -104,14 +120,55 @@
                             </button>
                         </section>
                     </div>
-                    <section class="four columns">
+                    <div class="four columns">
                         <section class="recent-activity">
                             <h2>Recent activity</h2>
+                            <div class="card card--border">
+                                <div>
+                                    <span class="event__name bold"
+                                        >Account Transfer</span
+                                    >
+                                    <span class="event__description grey-mid"
+                                        >2020-01-30</span
+                                    >
+                                </div>
+                                <span class="event__amount bold">$300.00</span>
+                            </div>
                         </section>
                         <section class="help">
                             <h2>Got a question?</h2>
+                            <div class="card card--border">
+                                <div>
+                                    <span class="bold">Chat</span>
+                                    <span class="grey-mid">1&ndash;2 min</span>
+                                </div>
+                                <a class="icon-link bold"
+                                    ><i class="material-icons">chat</i>Start
+                                    chat</a
+                                >
+                            </div>
+                            <div class="card card--border">
+                                <div>
+                                    <span class="bold">Call</span>
+                                    <span class="grey-mid">3&ndash;5 min</span>
+                                </div>
+                                <a class="icon-link bold"
+                                    ><i class="material-icons">phone</i>(123)
+                                    456 7890</a
+                                >
+                            </div>
+                            <div class="card card--border">
+                                <div>
+                                    <span class="bold">Email</span>
+                                    <span class="grey-mid">2 workdays</span>
+                                </div>
+                                <a class="icon-link bold"
+                                    ><i class="material-icons">email</i
+                                    >support@bank.com</a
+                                >
+                            </div>
                         </section>
-                    </section>
+                    </div>
                 </div>
             </div>
         </main>

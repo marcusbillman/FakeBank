@@ -82,10 +82,28 @@ p {
     margin-bottom: 1.6rem;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.grey-mid {
+    color: $clr-grey-mid;
+}
+
 .icon-link {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
+}
+
+.icon-action {
+    text-decoration: none;
+    .material-icons {
+        margin-right: 0;
+    }
+    &:not(:last-child) {
+        margin-right: 2.4rem;
+    }
 }
 
 .separator--vertical {
@@ -124,7 +142,20 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: $card-shadow;
+    &--shadow {
+        box-shadow: $card-shadow;
+    }
+    &--border {
+        border: 2px solid $clr-grey-light;
+        margin-bottom: 1.6rem;
+    }
+    span {
+        display: block;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .accounts {
@@ -135,15 +166,12 @@ p {
         filter: drop-shadow($card-shadow);
     }
     .account {
-        margin-bottom: 2rem;
+        margin-bottom: 1.6rem;
         animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         transform: translateY(-100%);
         clip-path: inset(100% 0 0 0);
-        span {
-            display: block;
-        }
-        &__name {
-            font-weight: bold;
+        &__balance {
+            margin-right: 4.8rem;
         }
     }
 }
