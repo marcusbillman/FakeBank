@@ -158,6 +158,20 @@ p {
     }
 }
 
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+    h2 {
+        margin-bottom: 0;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .accounts {
     #accountTemplate {
         display: none;
