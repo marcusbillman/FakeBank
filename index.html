@@ -13,6 +13,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/skeleton.css" />
+        <link rel="stylesheet" href="./css/breakpoints.css" />
         <link rel="stylesheet" href="./css/main.css" />
         <script src="./js/app.js" defer></script>
         <title>Fake Bank</title>
@@ -30,19 +31,19 @@
                             class="nav__link nav__link--active active-line icon-link"
                         >
                             <i class="material-icons">dashboard</i>
-                            Overview
+                            <span>Overview</span>
                         </a>
                         <a href="#" class="nav__link icon-link">
                             <i class="material-icons">send</i>
-                            Transfer
+                            <span class="bp-hide-1">Transfer</span>
                         </a>
                         <a href="#" class="nav__link icon-link">
                             <i class="material-icons">account_balance_wallet</i>
-                            Economy
+                            <span class="bp-hide-1">Economy</span>
                         </a>
                         <a href="#" class="nav__link icon-link">
                             <i class="material-icons">contact_support</i>
-                            Help & support
+                            <span class="bp-hide-1">Help & support</span>
                         </a>
                     </div>
                     <div class="nav__right">
@@ -162,30 +163,34 @@
                                     <span class="bold">Chat</span>
                                     <span class="grey-mid">1&ndash;2 min</span>
                                 </div>
-                                <a class="icon-link bold"
-                                    ><i class="material-icons">chat</i>Start
-                                    chat</a
-                                >
+                                <a class="icon-link bold">
+                                    <i class="material-icons">chat</i>
+                                    <span class="bp-hide-1">Start chat</span>
+                                </a>
                             </div>
                             <div class="card card--border">
                                 <div>
                                     <span class="bold">Call</span>
                                     <span class="grey-mid">3&ndash;5 min</span>
                                 </div>
-                                <a class="icon-link bold"
-                                    ><i class="material-icons">phone</i>(123)
-                                    456 7890</a
-                                >
+                                <a class="icon-link bold">
+                                    <i class="material-icons">phone</i>
+                                    <span class="bp-hide-1"
+                                        >(123) 456 7890</span
+                                    >
+                                </a>
                             </div>
                             <div class="card card--border">
                                 <div>
                                     <span class="bold">Email</span>
                                     <span class="grey-mid">2 workdays</span>
                                 </div>
-                                <a class="icon-link bold"
-                                    ><i class="material-icons">email</i
-                                    >support@bank.com</a
-                                >
+                                <a class="icon-link bold">
+                                    <i class="material-icons">email</i>
+                                    <span class="bp-hide-1"
+                                        >support@bank.com</span
+                                    >
+                                </a>
                             </div>
                         </section>
                     </div>
