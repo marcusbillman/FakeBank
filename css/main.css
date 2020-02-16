@@ -291,16 +291,23 @@ p {
   margin-left: 1.2rem;
 }
 
-.accounts #accountTemplate {
+.accounts #accountTemplate,
+.payment-cards #accountTemplate {
   display: none;
 }
 
-.accounts .account-wrapper {
+.accounts .account-wrapper,
+.accounts .payment-card-wrapper,
+.payment-cards .account-wrapper,
+.payment-cards .payment-card-wrapper {
   -webkit-filter: drop-shadow(0px 4px 6px rgba(66, 42, 42, 0.12));
           filter: drop-shadow(0px 4px 6px rgba(66, 42, 42, 0.12));
 }
 
-.accounts .account {
+.accounts .account,
+.accounts .payment-card,
+.payment-cards .account,
+.payment-cards .payment-card {
   display: block;
   margin-bottom: 1.6rem;
   -webkit-animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
@@ -311,7 +318,10 @@ p {
           clip-path: inset(100% 0 0 0);
 }
 
-.accounts .account__top {
+.accounts .account__top,
+.accounts .payment-card__top,
+.payment-cards .account__top,
+.payment-cards .payment-card__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,14 +330,42 @@ p {
           justify-content: space-between;
 }
 
-.accounts .account__bottom {
-  margin-top: 3rem;
+.accounts .account__bottom,
+.accounts .payment-card__bottom,
+.payment-cards .account__bottom,
+.payment-cards .payment-card__bottom {
+  margin-top: 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.accounts .account .payment-card-shape,
+.accounts .payment-card .payment-card-shape,
+.payment-cards .account .payment-card-shape,
+.payment-cards .payment-card .payment-card-shape {
+  width: 8rem;
+  height: 5.1rem;
+  border-radius: 0.5rem;
+  background: #d8e5ff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 2.4rem;
+}
+
+.accounts .account .payment-card__left,
+.accounts .payment-card .payment-card__left,
+.payment-cards .account .payment-card__left,
+.payment-cards .payment-card .payment-card__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a {

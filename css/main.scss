@@ -225,14 +225,17 @@ p {
     }
 }
 
-.accounts {
+.accounts,
+.payment-cards {
     #accountTemplate {
         display: none;
     }
-    .account-wrapper {
+    .account-wrapper,
+    .payment-card-wrapper {
         filter: drop-shadow($card-shadow);
     }
-    .account {
+    .account,
+    .payment-card {
         display: block;
         margin-bottom: 1.6rem;
         animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
@@ -243,9 +246,21 @@ p {
             justify-content: space-between;
         }
         &__bottom {
-            margin-top: 3rem;
+            margin-top: 2.4rem;
             display: flex;
             justify-content: space-between;
+        }
+        .payment-card-shape {
+            width: 8rem;
+            height: 5.1rem;
+            border-radius: 0.5rem;
+            background: $clr-blue-light;
+            flex-shrink: 0;
+            margin-right: 2.4rem;
+        }
+        .payment-card__left {
+            display: flex;
+            align-items: center;
         }
     }
 }

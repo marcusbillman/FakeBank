@@ -14,8 +14,9 @@
     .bp-tablet-show {
         display: initial !important;
     }
-    .account__balance {
-        margin-right: 4.8rem;
+    .account__balance,
+    .payment-card__balance {
+        margin-right: 3.2rem;
     }
 }
 
