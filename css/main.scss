@@ -117,11 +117,26 @@ section {
 
 footer {
     background: $clr-blue-light;
+    padding: 3.2rem 0;
     .desktop-footer {
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: space-between;
-        padding: 3.2rem 0;
+    }
+    .mobile-footer {
+        .footer__links {
+            display: flex;
+            margin: 2rem 0;
+        }
+        .footer__left,
+        .footer__right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .footer__link {
+            margin-bottom: 1.6rem;
+        }
     }
     .footer__link {
         color: $clr-grey-dark;
@@ -132,6 +147,9 @@ footer {
         font-weight: bold;
         color: $clr-blue;
         margin-right: 4.8rem;
+    }
+    .footer__copyright {
+        color: $clr-grey-mid;
     }
 }
 

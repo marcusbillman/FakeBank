@@ -41,5 +41,8 @@
   .bp-desktop-hide {
     display: initial !important;
   }
+  .bp-large-desktop-hide {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=breakpoints.css.map */
