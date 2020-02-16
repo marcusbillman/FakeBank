@@ -216,6 +216,12 @@ p {
     &__left {
         display: flex;
         align-items: center;
+        color: $clr-grey-dark;
+        text-decoration: none;
+        .material-icons {
+            color: $clr-grey-mid;
+            margin-left: 1.2rem;
+        }
     }
 }
 
