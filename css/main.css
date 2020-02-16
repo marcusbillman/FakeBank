@@ -65,6 +65,69 @@ nav .active-line::after {
   background: #004eeb;
 }
 
+.mobile-nav {
+  background: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 5.6rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-box-shadow: 0px -2px 6px rgba(66, 42, 42, 0.12);
+          box-shadow: 0px -2px 6px rgba(66, 42, 42, 0.12);
+}
+
+.mobile-nav__tab {
+  color: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.mobile-nav__tab--active {
+  color: #004eeb;
+  font-weight: bold;
+}
+
+.mobile-nav__tab .material-icons {
+  margin-right: 0;
+}
+
+.mobile-nav span {
+  font-size: 1.2rem;
+}
+
+.mobile-nav .active-line {
+  position: relative;
+}
+
+.mobile-nav .active-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.9rem;
+  height: 2px;
+  background: #004eeb;
+}
+
 main {
   padding-top: 4.8rem;
 }

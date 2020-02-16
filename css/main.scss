@@ -63,6 +63,49 @@ nav {
     }
 }
 
+.mobile-nav {
+    background: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5.6rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0px -2px 6px rgba(66, 42, 42, 0.12);
+    &__tab {
+        color: $clr-grey-dark;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        &--active {
+            color: $clr-blue;
+            font-weight: bold;
+        }
+        .material-icons {
+            margin-right: 0;
+        }
+    }
+    span {
+        font-size: 1.2rem;
+    }
+    .active-line {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -0.9rem;
+            height: 2px;
+            background: $clr-blue;
+        }
+    }
+}
+
 main {
     padding-top: 4.8rem;
 }
