@@ -1,3 +1,25 @@
+// Mobile
+.bp-tablet-show {
+    display: none !important;
+}
+.bp-desktop-show {
+    display: none !important;
+}
+
+// Tablet
+@media (min-width: 550px) {
+    .bp-tablet-hide {
+        display: none !important;
+    }
+    .bp-tablet-show {
+        display: initial !important;
+    }
+    .account__balance {
+        margin-right: 4.8rem;
+    }
+}
+
+// Desktop
 @media (min-width: 800px) {
     header {
         display: initial !important;
@@ -5,12 +27,17 @@
     .mobile-nav {
         display: none !important;
     }
-    .bp-hide-1 {
+    .bp-desktop-hide {
         display: none !important;
     }
+    .bp-desktop-show {
+        display: initial !important;
+    }
 }
+
+// Large Desktop
 @media (min-width: 1050px) {
-    .bp-hide-1 {
+    .bp-desktop-hide {
         display: initial !important;
     }
 }

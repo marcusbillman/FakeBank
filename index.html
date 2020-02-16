@@ -35,15 +35,15 @@
                         </a>
                         <a href="#" class="nav__link icon-link">
                             <i class="material-icons">send</i>
-                            <span class="bp-hide-1">Transfer</span>
+                            <span class="bp-desktop-hide">Transfer</span>
                         </a>
                         <a href="#" class="nav__link icon-link">
                             <i class="material-icons">account_balance_wallet</i>
-                            <span class="bp-hide-1">Economy</span>
+                            <span class="bp-desktop-hide">Economy</span>
                         </a>
                         <a href="#" class="nav__link icon-link">
                             <i class="material-icons">contact_support</i>
-                            <span class="bp-hide-1">Help & support</span>
+                            <span class="bp-desktop-hide">Help & support</span>
                         </a>
                     </div>
                     <div class="nav__right">
@@ -114,22 +114,42 @@
                                     id="accountTemplate"
                                 >
                                     <div class="account card">
-                                        <div>
-                                            <span
-                                                class="account__name bold"
-                                            ></span>
-                                            <span
-                                                class="account__number grey-mid"
-                                            ></span>
+                                        <div class="account__top">
+                                            <div class="card__left">
+                                                <span
+                                                    class="account__name bold"
+                                                ></span>
+                                                <span
+                                                    class="account__number grey-mid"
+                                                ></span>
+                                            </div>
+                                            <div class="card__right">
+                                                <span
+                                                    class="account__balance bold"
+                                                ></span>
+                                                <a
+                                                    href="#"
+                                                    class="icon-action bp-tablet-show"
+                                                    ><i class="material-icons"
+                                                        >send</i
+                                                    ></a
+                                                >
+                                                <a
+                                                    href="#"
+                                                    class="icon-action bp-tablet-show"
+                                                    ><i class="material-icons"
+                                                        >more_vert</i
+                                                    ></a
+                                                >
+                                            </div>
                                         </div>
-                                        <div class="card__right">
-                                            <span
-                                                class="account__balance bold"
-                                            ></span>
-                                            <a href="#" class="icon-action"
+                                        <div
+                                            class="account__bottom bp-tablet-hide"
+                                        >
+                                            <a class="icon-link bold"
                                                 ><i class="material-icons"
                                                     >send</i
-                                                ></a
+                                                >Transfer</a
                                             >
                                             <a href="#" class="icon-action"
                                                 ><i class="material-icons"
@@ -194,7 +214,9 @@
                                 </div>
                                 <a class="icon-link bold">
                                     <i class="material-icons">chat</i>
-                                    <span class="bp-hide-1">Start chat</span>
+                                    <span class="bp-desktop-hide"
+                                        >Start chat</span
+                                    >
                                 </a>
                             </div>
                             <div class="card card--border">
@@ -204,7 +226,7 @@
                                 </div>
                                 <a class="icon-link bold">
                                     <i class="material-icons">phone</i>
-                                    <span class="bp-hide-1"
+                                    <span class="bp-desktop-hide"
                                         >(123) 456 7890</span
                                     >
                                 </a>
@@ -216,7 +238,7 @@
                                 </div>
                                 <a class="icon-link bold">
                                     <i class="material-icons">email</i>
-                                    <span class="bp-hide-1"
+                                    <span class="bp-desktop-hide"
                                         >support@bank.com</span
                                     >
                                 </a>

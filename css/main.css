@@ -301,6 +301,7 @@ p {
 }
 
 .accounts .account {
+  display: block;
   margin-bottom: 1.6rem;
   -webkit-animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
           animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
@@ -310,8 +311,23 @@ p {
           clip-path: inset(100% 0 0 0);
 }
 
-.accounts .account__balance {
-  margin-right: 4.8rem;
+.accounts .account__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accounts .account__bottom {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 a {
