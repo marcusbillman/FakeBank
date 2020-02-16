@@ -23,6 +23,9 @@
   header {
     display: initial !important;
   }
+  main {
+    padding-bottom: 0 !important;
+  }
   .mobile-nav {
     display: none !important;
   }
