@@ -22,20 +22,23 @@
 
 // Desktop
 @media (min-width: 800px) {
-    header {
-        display: initial !important;
-    }
-    main {
-        padding-bottom: 0 !important;
-    }
-    .mobile-nav {
-        display: none !important;
-    }
     .bp-desktop-hide {
         display: none !important;
     }
     .bp-desktop-show {
         display: initial !important;
+    }
+    header {
+        display: initial !important;
+    }
+    .mobile-nav {
+        display: none !important;
+    }
+    main {
+        padding-bottom: 0 !important;
+    }
+    .desktop-footer {
+        display: flex !important;
     }
 }
 
